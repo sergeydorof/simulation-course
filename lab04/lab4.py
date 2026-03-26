@@ -11,8 +11,8 @@ def base_random(n):
         result.append(x / m)
     return result
 
-base_sample = base_random(100)
-built_into_sample = [random.random() for _ in range(100)]
+base_sample = base_random(100000)
+built_into_sample = [random.random() for _ in range(100000)]
 print("Базовая выборка")
 print(f"Среднее: {statistics.mean(base_sample)}, Дисперсия: {statistics.variance(base_sample)}")
 print("\nВстроенная выборка")
